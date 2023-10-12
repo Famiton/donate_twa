@@ -46,7 +46,7 @@ export function Sendtx() {
 	return (
 		<div className="send-tx-form">
 			<h3>Перевод по кнопке {tx.messages[0].amount} nanoTONs </h3>
-			<h3> в {tx.messages[0].address}  </h3>
+			<label> в {tx.messages[0].address}  </label>
 			<label>  
 			Сколько нанотон
                 <input
@@ -64,7 +64,7 @@ export function Sendtx() {
 						
 						)} onBlur={onReturnAmountInputBlur}
                 />
-				.
+				
             </label>
         			
 			{wallet ? (
