@@ -7,7 +7,7 @@ import SendTX from './components/SendTX.vue';
 
 <Toolbar class="m-1">
     <template #start>
-      <H3>Поблагодарить </H3> 
+      <h3>Поблагодарить </h3> 
     </template>
 
     <template #end>
