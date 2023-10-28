@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tonconnect/ui": "2.0.0-beta.3",
+    "@twa-dev/sdk": "^6.9.1",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.35.0",
