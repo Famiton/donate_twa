@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Toolbar from 'primevue/toolbar';
-import HelloWorld from './components/SendTX.vue'
+import SendTX from './components/SendTX.vue';
 </script>
 
 <template>
@@ -15,7 +15,7 @@ import HelloWorld from './components/SendTX.vue'
     </template>
 </Toolbar>
  
-   <HelloWorld/>
+ <SendTX/>
 </template>
 
 <style scoped>
