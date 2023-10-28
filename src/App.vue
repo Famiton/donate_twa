@@ -20,4 +20,5 @@ import HelloWorld from './components/SendTX.vue'
 
 <style scoped>
 
+  
 </style>

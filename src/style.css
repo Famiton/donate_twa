@@ -1,13 +1,15 @@
 
 
-#app {
-  width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
-  text-align: center;
-  
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vmax;
+  justify-content: flex-start;
+  margin: 0px;
+  width: 100vmax;
 }
+
 .m-1 {
     margin: 0.25rem ;
 }

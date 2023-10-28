@@ -6,7 +6,7 @@ import {TonConnectUI} from '@tonconnect/ui'
 import { THEME } from '@tonconnect/ui';
 
 const defaultTx = {
-	validUntil: Math.floor(Date.now() / 1000) + 300, // unix epoch seconds
+	validUntil: Math.floor(Date.now() / 1000) + 600, // unix epoch seconds
 	messages: [
 		{
 			address: 'UQB5VHgPGXvToUOV5b64wlyQzGgYZfPjZ6CyrSnBSgVeo_qD',
@@ -56,7 +56,7 @@ tonConnectUI.onStatusChange(wallet => {
                  <div class="m-1">{{ tx.messages[0].address }} </div> 
                   
                 
-                <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="m-1"/>
+                <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" size="small" class="m-1"/>
                 
                 
             </template>
