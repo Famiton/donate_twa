@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import Button from 'primevue/button';
 import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import {TonConnectUI} from '@tonconnect/ui'
@@ -51,9 +52,10 @@ tonConnectUI.onStatusChange(wallet => {
             <template #content>
                 <p>
                   Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span style="color:#60a5fa;">(nanotons)</span> на этот адрес 
-               </p>
+                {{ tx.messages[0].address }}
+                </p>
                 
-                 <div class="m-1">{{ tx.messages[0].address }} </div> 
+                
                   
                 
                 <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" size="small" class="m-1"/>
@@ -73,10 +75,9 @@ tonConnectUI.onStatusChange(wallet => {
 
 <style scoped>
 
-.m-1 {
-    margin: 0.25rem ;
-}
+
 .read-the-docs {
   color: #888;
+  text-align:center;
 }
 </style>

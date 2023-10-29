@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Toolbar from 'primevue/toolbar';
-import SendTX from './components/SendTX.vue';
+//import SendTX from './components/SendTX.vue';
 </script>
 
 <template>

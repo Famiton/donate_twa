@@ -3,17 +3,26 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  align-items: center;
+  align-content: center;
   margin: 0px;
+  min-height: 100vh;
+  width: 100%;
+  
+  
   
 }
+
+  
+
 #app {
   flex: 1 1 0%;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  overflow-wrap: break-word;
 }
 
 .m-1 {
