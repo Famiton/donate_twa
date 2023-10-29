@@ -23,6 +23,9 @@ const tonConnectUI = new TonConnectUI({
   manifestUrl: "https://famiton.github.io/donate_twa/tonconnect-manifest.json",
   buttonRootId: 'button-root',
   language: 'ru',
+  actionsConfiguration:{
+    twaReturnUrl: 'https://t.me/home_16_2_bot/donate' 
+  },
   uiPreferences: {
         theme: THEME.DARK,        
         colorsSet: {
@@ -34,7 +37,7 @@ const tonConnectUI = new TonConnectUI({
         }
     }
 });
-
+        
 
 tonConnectUI.onStatusChange(wallet => { 
   wallst.value = wallet
@@ -58,19 +61,19 @@ tonConnectUI.onStatusChange(wallet => {
                 
                   
                 
-                <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" size="small" class="m-1"/>
+                <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" size="small" />
                 
                 
             </template>
 
             <template #footer>
-                <Button v-if="wallst"  @Click="tonConnectUI.sendTransaction(tx)" label="Перевести " class="m-1" rounded/>
-			  				<Button v-else @Click="tonConnectUI.openModal()" label="Подключите кошелек для отправки" class="m-1" rounded/>
+                <Button v-if="wallst"  @Click="tonConnectUI.sendTransaction(tx)" label="Перевести " class="m-1" size="small" rounded/>
+			  				<Button v-else @Click="tonConnectUI.openModal()" label="Подключите кошелек для отправки" class="m-1" size="small" rounded/>
 			      </template>
         </Card>
     
    
-  <p v-if="wallst" class="read-the-docs"> Будет переведено <label >{{ Number(tx.messages[0].amount) / 1000000000 }} TON. </label></p>
+  <p v-if="wallst" class="read-the-docs"> Будет переведено <label >{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
 </template>
 
 <style scoped>
