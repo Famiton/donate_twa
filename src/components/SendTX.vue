@@ -50,7 +50,7 @@ tonConnectUI.onStatusChange(wallet => {
             
             
           <div class="card-body">
-                <p>
+                <p class="break-words">
                   Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span style="color:#60a5fa;">(nanotons)</span> на этот адрес 
                 {{ tx.messages[0].address }}
                 </p>
@@ -58,24 +58,16 @@ tonConnectUI.onStatusChange(wallet => {
                 <input type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="input input-bordered input-primary w-full max-w-xs" /> 
                 
                 <div class="card-actions justify-center">
-                  <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="btn btn-primary">Перевести</button>
-			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary">Подключите кошелек для отправки</button>
+                  <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="btn btn-primary btn-sm">Перевести</button>
+			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary btn-sm">Подключите кошелёк для отправки</button>
 			          </div>
           </div>
         </div>
    
-  <p v-if="wallst" class="read-the-docs"> Будет переведено <label >{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
+  <p v-if="wallst" class="text-center text-lime-400 "> Будет переведено <label>{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
 </template>
 
 <style scoped>
 
-
-.read-the-docs {
-  color: #888;
-  text-align:center;
-}
-.card-body{
-  overflow-wrap: break-word;
-}
 
 </style>

@@ -5,7 +5,7 @@ import SendTX from './components/SendTX.vue'
 
 <template>
  <div class="navbar " >
-  <div class="navbar-start"> Поблагодарить</div>
+  <div class="navbar-start text-xl"> Поблагодарить</div>
   <div class="navbar-end"><div id="button-root"></div></div>
 </div>
    <SendTX/>
