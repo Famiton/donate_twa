@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Button from 'primevue/button';
-import Card from 'primevue/card';
-import InputText from 'primevue/inputtext';
+
 import {TonConnectUI} from '@tonconnect/ui'
 import { THEME } from '@tonconnect/ui';
 
@@ -48,30 +46,23 @@ tonConnectUI.onStatusChange(wallet => {
 
 <template> 
 
-        <Card class="m-1">
-            <template #header>
-            </template>
+        <div class="card">
             
-            <template #content>
+            
+          <div class="card-body">
                 <p>
                   Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span style="color:#60a5fa;">(nanotons)</span> на этот адрес 
                 {{ tx.messages[0].address }}
                 </p>
+                               
+                <input type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="input input-bordered input-primary w-full max-w-xs" /> 
                 
-                
-                  
-                
-                <InputText type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" size="small" />
-                
-                
-            </template>
-
-            <template #footer>
-                <Button v-if="wallst"  @Click="tonConnectUI.sendTransaction(tx)" label="Перевести " class="m-1" size="small" rounded/>
-			  				<Button v-else @Click="tonConnectUI.openModal()" label="Подключите кошелек для отправки" class="m-1" size="small" rounded/>
-			      </template>
-        </Card>
-    
+                <div class="card-actions justify-end">
+                  <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="btn btn-primary">Перевести</button>
+			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary">Подключите кошелек для отправки</button>
+			          </div>
+          </div>
+        </div>
    
   <p v-if="wallst" class="read-the-docs"> Будет переведено <label >{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
 </template>
@@ -83,4 +74,8 @@ tonConnectUI.onStatusChange(wallet => {
   color: #888;
   text-align:center;
 }
+.card-body{
+  overflow-wrap: break-word;
+}
+
 </style>
