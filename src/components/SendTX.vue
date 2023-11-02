@@ -3,6 +3,8 @@ import { ref } from 'vue'
 
 import {TonConnectUI} from '@tonconnect/ui'
 import { THEME } from '@tonconnect/ui';
+import WebApp from '@twa-dev/sdk'
+
 
 const defaultTx = {
 	validUntil: Math.floor(Date.now() / 1000) + 600, // unix epoch seconds
@@ -16,6 +18,7 @@ const defaultTx = {
 
 const tx = ref(defaultTx)
 const wallst = ref()
+const user = WebApp.initDataUnsafe.user?.username
 
 const tonConnectUI = new TonConnectUI({ 
   manifestUrl: "https://famiton.github.io/donate_twa/tonconnect-manifest.json",
@@ -49,22 +52,22 @@ tonConnectUI.onStatusChange(wallet => {
         <div class="card">
             
             
-          <div class="card-body">
+          <div class="card-body ">
                 <p class="break-words">
-                  Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span style="color:#60a5fa;">(nanotons)</span> на этот адрес 
+                  Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span class="text-blue-400">(nanotons)</span> на этот адрес 
                 {{ tx.messages[0].address }}
                 </p>
                                
-                <input type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="input input-bordered input-primary w-full max-w-xs" /> 
+                <input type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="input input-bordered input-primary input-sm w-full max-w-xs" /> 
                 
                 <div class="card-actions justify-center">
                   <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="btn btn-primary btn-sm">Перевести</button>
-			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary btn-sm">Подключите кошелёк для отправки</button>
+			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary btn-sm ">Подключите кошелёк для отправки</button>
 			          </div>
           </div>
         </div>
    
-  <p v-if="wallst" class="text-center text-lime-400 "> Будет переведено <label>{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
+  <p v-if="wallst" class="text-center text-lime-400 ">{{user}} - Будет переведено <label>{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
 </template>
 
 <style scoped>
