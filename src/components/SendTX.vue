@@ -18,7 +18,7 @@ const defaultTx = {
 
 const tx = ref(defaultTx)
 const wallst = ref()
-const user = WebApp.initDataUnsafe.user?.username
+const user = WebApp.initDataUnsafe.user?.first_name
 
 const tonConnectUI = new TonConnectUI({ 
   manifestUrl: "https://famiton.github.io/donate_twa/tonconnect-manifest.json",
@@ -54,7 +54,7 @@ tonConnectUI.onStatusChange(wallet => {
             
           <div class="card-body ">
                 <p class="break-words">
-                  Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span class="text-blue-400">(nanotons)</span> на этот адрес 
+                  Если вам нравится и вы хотите поддержать, вы можете пожертвовать любое количество монет <span class="text-primary">(nanotons)</span> на этот адрес 
                 {{ tx.messages[0].address }}
                 </p>
                                
