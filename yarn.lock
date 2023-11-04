@@ -197,43 +197,43 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tonconnect/isomorphic-eventsource@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@tonconnect/isomorphic-eventsource/-/isomorphic-eventsource-0.0.1.tgz#199e5a86c31dad706b79826f65879e0d77d3dd51"
-  integrity sha512-ODk48pMlqLSOvu3fM0R1sdlz/Cv2y4hSfwtXmLq9ky9+H7ZQfw/16ElpIJ69B4lUvHycxrueNgrRtF9PJHoGMw==
+"@tonconnect/isomorphic-eventsource@^0.0.2-beta.0":
+  version "0.0.2-beta.0"
+  resolved "https://registry.yarnpkg.com/@tonconnect/isomorphic-eventsource/-/isomorphic-eventsource-0.0.2-beta.0.tgz#04c8542283704ffc215d4cddcb0f9979541aed9b"
+  integrity sha512-KeXr2LA04p5OE5Zbttc8W/mwublzAGYymqA9yRTF7BRoR76tPV/6j73kRtDlGloLHxtQ/2ygvbniGF4NIxH9Vw==
   dependencies:
     eventsource "^2.0.2"
 
-"@tonconnect/isomorphic-fetch@^0.0.2":
+"@tonconnect/isomorphic-fetch@^0.0.2-beta.0":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@tonconnect/isomorphic-fetch/-/isomorphic-fetch-0.0.2.tgz#c09ff05a409ec89262c369d4bf27305820cdaa33"
   integrity sha512-DAyA4oL7MqbBo9k8+8E+YiWsGCYi6UMhDTcsZjhgzhESkBNG6b+NBkpb1KH4oi0xDZQoknFtY9XogJLuQtSMQQ==
   dependencies:
     node-fetch "^2.6.9"
 
-"@tonconnect/protocol@^2.2.5":
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/@tonconnect/protocol/-/protocol-2.2.5.tgz#15369801708354821295a6d284f0267799ac48cc"
-  integrity sha512-kR0E+CWZl6JrE/30283v+sRiAvEu21t1xOLFx6f/BxlCNLY2wki39+L32+iicX8gn/Ig99L1flr9TAI9QW9bnQ==
+"@tonconnect/protocol@^2.2.6-beta.0":
+  version "2.2.6-beta.0"
+  resolved "https://registry.yarnpkg.com/@tonconnect/protocol/-/protocol-2.2.6-beta.0.tgz#027670620f012632da43edf3087901ab296d5b0c"
+  integrity sha512-vNSD4mPBGRb5QTWhpzcNUtnLSlJ4+L7plQSbeznQpwYusTMYKJA3/TSCDANPuXPSCSk3gU7mR05/VCiAKT8Cmg==
   dependencies:
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
-"@tonconnect/sdk@^3.0.0-beta.1":
-  version "3.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@tonconnect/sdk/-/sdk-3.0.0-beta.1.tgz#522d88409dd8ae9b3aa2eabfddfd3cee28bdb514"
-  integrity sha512-YcTO3USLNblaB+ClPFcQ8LwR68GaZ78kFbxBLANi6tvRORP0d0aSSjTODRs0lDOfVN0gkLCwo+7JxrRBoF/20w==
+"@tonconnect/sdk@^3.0.0-beta.2":
+  version "3.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@tonconnect/sdk/-/sdk-3.0.0-beta.2.tgz#09076f6bc67aedab5a5719b7f277b96a30d4d6f9"
+  integrity sha512-+cFiDeYhPvXyxw+MtZVZ1Qu559PKPg8j0ofuR6H60P3CLZo9NDWyEFEzoSX+JZBxfq7LSUwO4DjcrBEppgOYZA==
   dependencies:
-    "@tonconnect/isomorphic-eventsource" "^0.0.1"
-    "@tonconnect/isomorphic-fetch" "^0.0.2"
-    "@tonconnect/protocol" "^2.2.5"
+    "@tonconnect/isomorphic-eventsource" "^0.0.2-beta.0"
+    "@tonconnect/isomorphic-fetch" "^0.0.2-beta.0"
+    "@tonconnect/protocol" "^2.2.6-beta.0"
 
-"@tonconnect/ui@^2.0.0-beta.4":
-  version "2.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@tonconnect/ui/-/ui-2.0.0-beta.4.tgz#b5cc85feb7fd899c3c2acaacbf74f9177655c9f4"
-  integrity sha512-bE3zF34yvjrNkNyulwWZHACSXqo0M5eYdslZM54/miTr5tOFJEhUofv/sgbWHNdD78MHrPPOcoXQxoKkaiFZ+Q==
+"@tonconnect/ui@2.0.0-beta.5":
+  version "2.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@tonconnect/ui/-/ui-2.0.0-beta.5.tgz#3761b5d20ddd2b426831fc621a8b38e0cd1b8547"
+  integrity sha512-prCEpwbV0g4vedQdPL25Za6aHnyrKneWFaPQ9jCpcK2kaV4iTfce5vwX1I9CwoQR5A+LFUgYwo2MTfYTqNHLJQ==
   dependencies:
-    "@tonconnect/sdk" "^3.0.0-beta.1"
+    "@tonconnect/sdk" "^3.0.0-beta.2"
     classnames "^2.3.2"
     deepmerge "^4.2.2"
     ua-parser-js "^1.0.35"

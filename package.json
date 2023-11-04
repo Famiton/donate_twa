@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
-    "@tonconnect/ui": "^2.0.0-beta.4",
+    "@tonconnect/ui": "2.0.0-beta.5",
     "@twa-dev/sdk": "^6.9.1",
     "vue": "^3.3.4"
   },
