@@ -49,7 +49,7 @@ tonConnectUI.onStatusChange(wallet => {
 
 <template> 
 
-        <div class="card">
+        <div class="card bg-neutral my-1">
             
             
           <div class="card-body ">
@@ -67,7 +67,7 @@ tonConnectUI.onStatusChange(wallet => {
           </div>
         </div>
    
-  <p v-if="wallst" class="text-center text-lime-400 ">{{user}} - Будет переведено <label>{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
+  <p v-if="wallst" class="text-center text-lime-400 ">{{user}}, будет переведено <label>{{ Number(tx.messages[0].amount) / 1000000000 }} TON </label></p>
 </template>
 
 <style scoped>

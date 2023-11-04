@@ -8,7 +8,7 @@ module.exports = {
       
       {
         mytheme: {
-          
+           'color-scheme': 'dark',
            'primary' : '#60a5fa',
            'primary-focus' : '#3b82f6',
            'primary-content' : '#ffffff',
