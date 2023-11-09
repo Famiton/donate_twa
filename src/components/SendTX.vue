@@ -49,7 +49,7 @@ tonConnectUI.onStatusChange(wallet => {
 
 <template> 
 
-        <div class="card bg-neutral my-1">
+        <div class="card bg-neutral m-2">
             
             
           <div class="card-body ">
@@ -61,8 +61,8 @@ tonConnectUI.onStatusChange(wallet => {
                 <input type="text" v-model="tx.messages[0].amount" :placeholder="defaultTx.messages[0].amount" class="input input-bordered input-primary input-sm w-full max-w-xs" /> 
                 
                 <div class="card-actions justify-center">
-                  <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="btn btn-primary btn-sm">Перевести</button>
-			  				  <button v-else @click="tonConnectUI.openModal()"  class="btn btn-primary btn-sm ">Подключите кошелёк для отправки</button>
+                  <button v-if="wallst"  @click="tonConnectUI.sendTransaction(tx)" class="go2458255149 go4218612181">Перевести</button>
+			  				  <button v-else @click="tonConnectUI.openModal()"  class="go2458255149 go4218612181">Подключите кошелёк для отправки</button>
 			          </div>
           </div>
         </div>
