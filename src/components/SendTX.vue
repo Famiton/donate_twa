@@ -49,7 +49,7 @@ tonConnectUI.onStatusChange(wallet => {
 
 <template> 
 
-        <div class="card bg-neutral m-2">
+        <div class="card bg-neutral m-1">
             
             
           <div class="card-body ">
