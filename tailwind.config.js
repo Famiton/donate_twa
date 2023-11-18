@@ -8,28 +8,15 @@ module.exports = {
       
       {
         mytheme: {
-           'color-scheme': 'dark',
-           'primary' : '#60a5fa',
-           'primary-focus' : '#3b82f6',
-           'primary-content' : '#ffffff',
-
-           'secondary' : '#e879f9',
-           'secondary-focus' : '#d946ef',
-           'secondary-content' : '#ffffff',
-
-           'accent' : '#2dd4bf',
-           'accent-focus' : '#14b8a6',
-           'accent-content' : '#ffffff',
-
-           'neutral' : '#2a2e37',
-           'neutral-focus' : '#16181d',
-           'neutral-content' : '#ffffff',
-
+           "color-scheme": "dark",
+           'primary' : '#60a5fa',           
+           'secondary' : '#e879f9',           
+           'accent' : '#2dd4bf',           
+           'neutral' : '#2a2e37',           
            'base-100' : '#3b424e',
            'base-200' : '#2a2e37',
            'base-300' : '#16181d',
            'base-content' : '#ebecf0',
-
            'info' : '#66c7ff',
            'success' : '#87cf3a',
            'warning' : '#e1d460',
