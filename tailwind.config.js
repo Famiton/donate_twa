@@ -4,19 +4,34 @@ module.exports = {
             './src/**/*.{vue,js,ts}' ],
   plugins: [require("daisyui")],
   daisyui: {
+    base: false,
+    utils: false,
     themes: [
       
       {
         mytheme: {
            "color-scheme": "dark",
-           'primary' : '#60a5fa',           
-           'secondary' : '#e879f9',           
-           'accent' : '#2dd4bf',           
-           'neutral' : '#2a2e37',           
+           'primary' : '#60a5fa',
+           
+           'primary-content' : '#ffffff',
+
+           'secondary' : '#e879f9',
+           
+           'secondary-content' : '#ffffff',
+
+           'accent' : '#2dd4bf',
+           
+           'accent-content' : '#ffffff',
+
+           'neutral' : '#2a2e37',
+           
+           'neutral-content' : '#ffffff',
+
            'base-100' : '#3b424e',
            'base-200' : '#2a2e37',
            'base-300' : '#16181d',
            'base-content' : '#ebecf0',
+
            'info' : '#66c7ff',
            'success' : '#87cf3a',
            'warning' : '#e1d460',

@@ -1,6 +1,13 @@
 <script setup lang="ts">
-
+import WebApp from '@twa-dev/sdk'
+import { onMounted } from 'vue'
 import SendTX from './components/SendTX.vue'
+
+onMounted(() => {
+   WebApp.ready()
+   WebApp.expand()
+})
+
 </script>
 
 <template>
