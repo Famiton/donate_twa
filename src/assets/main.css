@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@supports not (color: oklch(0 0 0)) {
+  :root {
+    color-scheme: dark;
+    --fallback-p: #60a5fa;
+    --fallback-pc: #ffffff;
+    --fallback-s: #e879f9;
+    --fallback-sc: #ffffff;
+    --fallback-a: #2dd4bf;
+    --fallback-ac: #ffffff;
+    --fallback-n: #2a2e37;
+    --fallback-nc: #ffffff;
+    --fallback-b1: #3b424e;
+    --fallback-b2: #2a2e37;
+    --fallback-b3: #16181d;
+    --fallback-bc: #ebecf0;
+    --fallback-in: #66c7ff;
+    --fallback-inc: #000000;
+    --fallback-su: #00ca92;
+    --fallback-suc: #000000;
+    --fallback-wa: #ffc22d;
+    --fallback-wac: #000000;
+    --fallback-er: #ff6f70;
+    --fallback-erc: #000000;
+  }
+      
+  }
