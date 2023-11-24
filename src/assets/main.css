@@ -29,5 +29,10 @@
     --fallback-er: #ff6f70;
     --fallback-erc: #000000;
   }
-      
+  body {
+    
+    background-color: var(--fallback-b1);
+    
   }
+      
+}
