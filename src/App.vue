@@ -5,6 +5,7 @@ import SendTX from './components/SendTX.vue'
 
 onMounted(() => {
    WebApp.ready()
+   WebApp.sendData(WebApp.initData)
    WebApp.expand()
 })
 

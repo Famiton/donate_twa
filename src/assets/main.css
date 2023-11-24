@@ -6,7 +6,8 @@
 
 @supports not (color: oklch(0 0 0)) {
   :root {
-    color-scheme: dark;
+    
+    color-scheme: var(--tg-color-scheme , dark);
     --fallback-p: #60a5fa;
     --fallback-pc: #ffffff;
     --fallback-s: #e879f9;
