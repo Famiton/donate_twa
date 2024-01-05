@@ -7,17 +7,17 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
+    "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
     "@tonconnect/ui": "2.0.0",
     "@twa-dev/sdk": "^6.9.2",
-    "vue": "3.4.3"
+    "vue": "3.4.5"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
-    "@types/node": "^18.18.5",
-    "@vitejs/plugin-vue": "^5.0.2",
+    "@types/node": "^18.19.4",
+    "@vitejs/plugin-vue": "^4.6.2",
     "@vue/tsconfig": "^0.5.1",
     "autoprefixer": "^10.4.16",
     "daisyui": "4.4.24",
@@ -25,7 +25,7 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "typescript": "~5.3.0",
-    "vite": "^5.0.10",
-    "vue-tsc": "^1.8.26"
+    "vite": "^5.0.11",
+    "vue-tsc": "^1.8.27"
   }
 }
